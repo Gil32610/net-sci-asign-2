@@ -1,0 +1,25 @@
+{
+  "name": "Asignment Random Graph Theory",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "mounts": [
+    "source=network-data-volume,target=/workspace/data,type=volume"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-toolsai.jupyter-renderers",
+        "charliermarsh.ruff"
+      ]
+    }
+  },
+  "updateRemoteUserUID": true,
+  "remoteUser": "root"
+}
